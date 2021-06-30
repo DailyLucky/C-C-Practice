@@ -4,8 +4,8 @@ cmake_minimum_required(VERSION 3.15)
 # 工程名
 project(practice)
 
-# 添加当前目录下的所有源文件到DIR_SRCS中
-aux_source_directory($.{DIR_SRCS})
+# 查找当前目录下的所有源文件，将名字保存到DIR_SRCS
+aux_source_directory(. DIR_SRCS)
 
 # 生成可执行文件
 add_executable(main ${DIR_SRCS})
